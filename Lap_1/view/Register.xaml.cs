@@ -70,10 +70,11 @@ namespace Lap_1.view
 
             Validate(firstName.Text, lastName.Text, email.Text, address.Text, phone.Text, password.Password);
 
+            if(countError == 0)
+            {
+                Debug.WriteLine(jsonString);
 
-            Debug.WriteLine(jsonString);
-
-
+            };
         }
 
     
